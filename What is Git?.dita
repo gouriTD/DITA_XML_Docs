@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_blf_fpd_v3c">
+    <title>What is Git?</title>
+    <shortdesc id="shortdesc_qwm_mpd_v3c">Here we will explore what Git is all about.</shortdesc>
+    <conbody>
+        <p>Git is a distributed version control system used to track changes in files and
+            collaborate on software projects. It allows developers to maintain a complete history of
+            their work and efficiently manage code changes. </p>
+        <p>Using Git, you can:</p>
+        <ul id="ul_iwp_dqd_v3c">
+            <li>Track changes to files.</li>
+            <li>Collaborate with other developers.</li>
+            <li>Revert to previous versions when needed.</li>
+            <li>Maintain a complete history of your project.</li>
+            <li> Manage both small and large projects efficiently </li>
+        </ul>
+        <p>Git is free, open-source, and available on all major operating systems.</p>
+        <section id="section_nb1_2rd_v3c"><title>How it works?</title><p><b>The three states of
+                    Git</b></p><p>Git manages your files by moving them through three different
+                areas on your local machine:</p><ul id="ul_v45_nrd_v3c">
+                <li>
+                    <p><b>Working directory:</b> This is the project folder where you make changes
+                        to your files. Files here are considered “modified” until they are
+                        staged.</p>
+                </li>
+                <li>
+                    <p><b>Staged area : </b>This is an intermediate area before changes are saved
+                        permanently in database.</p>
+                </li>
+                <li>
+                    <p><b>Local repository(.git folder): </b>This is the permanent database where
+                        Git stores your project's history. Git takes everything in the staging area
+                        and saves it as a permanent snapshot.</p>
+                </li>
+            </ul><b>Basic concepts of Git</b><ul id="ul_qw2_3sd_v3c">
+                <li>
+                    <p><b>Snapshots:</b> A snapshot is a saved version of your project at a specific
+                        point in time, like a photo of all your files.</p>
+                </li>
+                <li>
+                    <p><b>Branching:</b> Branching lets you create a separate workspace to develop
+                        features or fixes without affecting the main project.</p>
+                </li>
+                <li>
+                    <p><b>Merging:</b> Merging is the process of combining changes from one branch
+                        into another.</p>
+                </li>
+                <li>
+                    <p><b>Hashes (SHA-1):</b> A SHA-1 hash is a unique string that identifies each
+                        commit, helping track and verify changes.</p>
+                </li>
+            </ul><fig id="fig_nk5_xsd_v3c">
+                <title>Git Workflow</title>
+                <image href="../git-workflow.png" id="image_ok5_xsd_v3c" width="800">
+                    <alt>git-workflow</alt>
+                </image>
+            </fig><p>The above diagram shows the Git workflow, where changes move from the working
+                directory to the staging area and are saved as commits in the local repository. Each
+                commit acts as a snapshot of the project and is identified by a unique SHA-1 hash.
+                The final changes are pushed to remote repository like Github for collaboration.
+                </p><fig id="fig_ffc_qtd_v3c">
+                <title>Git Branching</title>
+                <image href="../git-branching.png" width="400" id="image_gfc_qtd_v3c">
+                    <alt>git-branching</alt>
+                </image>
+            </fig><p>Using the branching mechanism as shown above the developers can use branches to
+                work on features independently without affecting the main codebase.</p><p>Git
+                workflow and branching technique enables efficient version control, collaboration,
+                and safe experimentation in modern software development.</p></section>
+    </conbody>
+</concept>
