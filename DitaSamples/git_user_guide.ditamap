@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Git installation and usage guide</title>
+    <topichead navtitle="Git user guide">
+        <topicref href="what-is-git.dita"/>
+        <topicref href="how-to-install-git.dita"/>
+        <topicref href="how-to-use-git-for-development.dita"/>
+    </topichead>
+</map>
