@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2026"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="task"><meta name="description" content="Here we explore how Git is used for development."><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="task_l2p_jvd_v3c"><title>How to use Git for Development?</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="task_l2p_jvd_v3c"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">How to use Git for Development?</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">Here we explore how Git is used for development.</p>
+        <section class="section prereq" id="task_l2p_jvd_v3c__prereq_lb3_pvd_v3c">Ensure Git is successfully installed on your
+            systems.</section>
+        <section class="section context" id="task_l2p_jvd_v3c__context_o4d_yvd_v3c">Basic Git Workflow<p class="p">Git follows a simple workflow for
+                tracking changes in a project:</p><ol class="ol" id="task_l2p_jvd_v3c__ol_y1d_dwd_v3c">
+                <li class="li">Initialize a repository</li>
+                <li class="li">Stage files</li>
+                <li class="li">Commit changes</li>
+                <li class="li">Check repository status</li>
+            </ol></section>
+        <section><ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd"><strong class="ph b">Initialize a repository</strong></span>
+                <div class="itemgroup info">
+                    <p class="p">Navigate to your project folder and initialize Git:</p>
+                    <pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_wjp_jwd_v3c"><code>git init
+</code></pre>
+                    <p class="p">This command creates a new Git repository in the selected directory. </p>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd"><strong class="ph b">Stage files</strong></span>
+                <div class="itemgroup info">
+                    <p class="p">Add the files in the staging area before committing</p>
+                    <p class="p">Add a specific file:</p>
+                    <pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_hs3_vwd_v3c"><code>git add &lt;filename&gt;</code></pre>
+                    <p class="p">Add multiple files in the directory: </p>
+                    <pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_z5j_wwd_v3c"><code>git add .</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd"><strong class="ph b">Commit changes</strong>
+                </span>
+                <div class="itemgroup info">
+                    <p class="p">Save the staged changes with a descriptive message.</p>
+                    <pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_z3p_1xd_v3c"><code>git commit -m &lt;your descriptive message&gt;</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd"><strong class="ph b">Check repository status</strong></span>
+                <div class="itemgroup info">
+                    <p class="p">View the current state of repository:</p>
+                    <pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_xf5_dxd_v3c"><code>git status</code></pre>
+                </div>
+            </li></ol></section>
+        <section class="section result" id="task_l2p_jvd_v3c__result_o3b_fxd_v3c">The repository is initialized and tracked by Git.</section>
+        <section class="example" id="task_l2p_jvd_v3c__example_bqh_gxd_v3c">
+            <p class="p">Let’s try to understand how to track a project using Git with an example.</p>
+            <p class="p">Suppose you have a project folder named <code class="ph codeph">testProject</code>.</p>
+            <ol class="ol" id="task_l2p_jvd_v3c__ol_vdz_1yd_v3c">
+                <li class="li">Navigate to project
+                    folder:<pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_jyc_jxd_v3c"><code>cd testProject</code></pre></li>
+                <li class="li">Initialize the
+                    repository:<pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_tpm_rxd_v3c"><code>git init</code></pre></li>
+                <li class="li">Create a new
+                    file:<pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_atg_txd_v3c"><code>touch testFile.txt</code></pre></li>
+                <li class="li">Stage the newly created
+                    file:<pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_eq4_5xd_v3c"><code>git add testFile.txt</code></pre></li>
+                <li class="li">Commit the staged
+                    file:<pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_ev1_xxd_v3c"><code>git commit -m “test file added”</code></pre></li>
+                <li class="li">Check the repository
+                    status:<pre class="pre codeblock" id="task_l2p_jvd_v3c__codeblock_hc5_zxd_v3c"><code>git status</code></pre></li>
+            </ol>
+        </section>
+    </div>
+</article></main></body></html>

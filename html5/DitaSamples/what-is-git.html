@@ -1,0 +1,68 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2026"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content="Here we will explore what Git is all about."><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="concept_blf_fpd_v3c"><title>What is Git?</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="concept_blf_fpd_v3c"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">What is Git?</h1>
+    
+    <div class="body conbody"><p class="shortdesc">Here we will explore what Git is all about.</p>
+        <p class="p">Git is a distributed version control system used to track changes in files and
+            collaborate on software projects. It allows developers to maintain a complete history of
+            their work and efficiently manage code changes. </p>
+        <p class="p">Using Git, you can:</p>
+        <ul class="ul" id="concept_blf_fpd_v3c__ul_iwp_dqd_v3c">
+            <li class="li">Track changes to files.</li>
+            <li class="li">Collaborate with other developers.</li>
+            <li class="li">Revert to previous versions when needed.</li>
+            <li class="li">Maintain a complete history of your project.</li>
+            <li class="li"> Manage both small and large projects efficiently </li>
+        </ul>
+        <p class="p">Git is free, open-source, and available on all major operating systems.</p>
+        <section class="section" id="concept_blf_fpd_v3c__section_nb1_2rd_v3c"><h2 class="title sectiontitle">How it works?</h2><p class="p"><strong class="ph b">The three states of
+                    Git</strong></p><p class="p">Git manages your files by moving them through three different
+                areas on your local machine:</p><ul class="ul" id="concept_blf_fpd_v3c__ul_v45_nrd_v3c">
+                <li class="li">
+                    <p class="p"><strong class="ph b">Working directory:</strong> This is the project folder where you make changes
+                        to your files. Files here are considered “modified” until they are
+                        staged.</p>
+                </li>
+                <li class="li">
+                    <p class="p"><strong class="ph b">Staged area : </strong>This is an intermediate area before changes are saved
+                        permanently in database.</p>
+                </li>
+                <li class="li">
+                    <p class="p"><strong class="ph b">Local repository(.git folder): </strong>This is the permanent database where
+                        Git stores your project's history. Git takes everything in the staging area
+                        and saves it as a permanent snapshot.</p>
+                </li>
+            </ul><strong class="ph b">Basic concepts of Git</strong><ul class="ul" id="concept_blf_fpd_v3c__ul_qw2_3sd_v3c">
+                <li class="li">
+                    <p class="p"><strong class="ph b">Snapshots:</strong> A snapshot is a saved version of your project at a specific
+                        point in time, like a photo of all your files.</p>
+                </li>
+                <li class="li">
+                    <p class="p"><strong class="ph b">Branching:</strong> Branching lets you create a separate workspace to develop
+                        features or fixes without affecting the main project.</p>
+                </li>
+                <li class="li">
+                    <p class="p"><strong class="ph b">Merging:</strong> Merging is the process of combining changes from one branch
+                        into another.</p>
+                </li>
+                <li class="li">
+                    <p class="p"><strong class="ph b">Hashes (SHA-1):</strong> A SHA-1 hash is a unique string that identifies each
+                        commit, helping track and verify changes.</p>
+                </li>
+            </ul><figure class="fig fignone" id="concept_blf_fpd_v3c__fig_nk5_xsd_v3c"><figcaption><span class="fig--title-label">Figure 1. </span>Git Workflow</figcaption>
+                
+                <img class="image" id="concept_blf_fpd_v3c__image_ok5_xsd_v3c" src="../git-workflow.png" width="800" alt="git-workflow">
+            </figure><p class="p">The above diagram shows the Git workflow, where changes move from the working
+                directory to the staging area and are saved as commits in the local repository. Each
+                commit acts as a snapshot of the project and is identified by a unique SHA-1 hash.
+                The final changes are pushed to remote repository like Github for collaboration.
+                </p><figure class="fig fignone" id="concept_blf_fpd_v3c__fig_ffc_qtd_v3c"><figcaption><span class="fig--title-label">Figure 2. </span>Git Branching</figcaption>
+                
+                <img class="image" id="concept_blf_fpd_v3c__image_gfc_qtd_v3c" src="../git-branching.png" width="400" alt="git-branching">
+            </figure><p class="p">Using the branching mechanism as shown above the developers can use branches to
+                work on features independently without affecting the main codebase.</p><p class="p">Git
+                workflow and branching technique enables efficient version control, collaboration,
+                and safe experimentation in modern software development.</p></section>
+    </div>
+</article></main></body></html>
